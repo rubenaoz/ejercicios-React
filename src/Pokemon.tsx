@@ -18,7 +18,6 @@ export default function Pokemon() {
         const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${i}`);
         const data = await response.json();
 
-        // Segunda llamada para obtener la generación
         const speciesResponse = await fetch(`https://pokeapi.co/api/v2/pokemon-species/${i}`);
         const speciesData = await speciesResponse.json();
 
